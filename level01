@@ -1,0 +1,11 @@
+LEVEL01
+
+su level01
+mdp: x24ti5gi3x0ol2eh4esiuxias
+
+find / -user level01 -type f 2> /dev/null
+
+renvoie pas mal de dossiers /proc/..
+
+http://manpagesfr.free.fr/man/man5/proc.5.html
+
