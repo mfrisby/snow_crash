@@ -3,20 +3,21 @@ LEVEL01
 su level01
 mdp: x24ti5gi3x0ol2eh4esiuxias
 
-find / -user level01 -type f 2> /dev/null
+cat /etc/passwd
 
-renvoie pas mal de dossiers /proc/..
+flag01:42hDRfypTqqnw:3001:3001::/home/flag/flag01:/bin/bash
+42hDRfypTqqnw
 
-http://manpagesfr.free.fr/man/man5/proc.5.html
+use john the ripper to get clear password
 
-http://www.linuxcertif.com/doc//proc/
+set passwd in file
 
-un `ps ax ; ls /proc` permet de voir que les nom de dossier sous forme de nombre dans /proc corresponde au numero du process en cours.
+john passwd.txt --show
 
-Si on va dans le dossier correspondant au process on peux trouver des fichiers/dossiers/executables
+mdp : abcdefg
 
-cmdline: la ligne de commande qui a servi à lancer le processus
-cwd: répertoire courant du processus
-environ: variable d'environnement du processus
-exe: lien symbolique vers le fichier exécutable du processus
-status: informations sur le processus, PID, PPID, UID du propriétaire, GID, etc
+level01@SnowCrash:~$ su flag01
+Password: abcdefg
+Don't forget to launch getflag !
+flag01@SnowCrash:~$ getflag
+Check flag.Here is your token : f2av5il02puano7naaf6adaaf
