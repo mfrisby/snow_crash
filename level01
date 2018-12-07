@@ -9,3 +9,8 @@ renvoie pas mal de dossiers /proc/..
 
 http://manpagesfr.free.fr/man/man5/proc.5.html
 
+http://www.linuxcertif.com/doc//proc/
+
+un `ps ax ; ls /proc` permet de voir que les nom de dossier sous forme de nombre dans /proc corresponde au numero du process en cours.
+
+
