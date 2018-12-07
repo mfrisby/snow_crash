@@ -3,6 +3,13 @@ LEVEL 00
 ** find file who belong to flag00 **
 
 level00@SnowCrash:~$ find / -user flag00 -type f 2> /dev/null
-/usr/sbin/john
-/rofs/usr/sbin/john
+/usr/sbin/john => "cdiiddwpgswtgt"
+/rofs/usr/sbin/john => "cdiiddwpgswtgt"
 
+Cesar algo 15
+NOTTO OHARD HERE
+
+su flag00
+mdp: nottoohardhere
+
+getflag: x24ti5gi3x0ol2eh4esiuxias
