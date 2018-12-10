@@ -1,0 +1,8 @@
+su level02
+mdp: f2av5il02puano7naaf6adaaf
+
+pcap file in home, get it (scp / transfer.sh)
+
+get wireshark to read the file
+
+https://www.it-connect.fr/reconstruction-dun-fichier-depuis-un-enregistrement-pcap/
